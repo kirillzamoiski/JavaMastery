@@ -4,7 +4,6 @@ import com.webproject.simplewebapplication.entity.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-@Repository
 public interface UserDao {
 
     Boolean save(User user);

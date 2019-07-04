@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public Boolean save(User user) {
-        String query="insert into employee values(?,?,?,?,?,?,?)";
+        String query="INSERT INTO public.employee values(?,?,?,?,?,?,?)";
         return jdbcTemplate.execute(query,new PreparedStatementCallback<Boolean>(){
             @Override
             public Boolean doInPreparedStatement(PreparedStatement ps)
